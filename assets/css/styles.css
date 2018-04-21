@@ -1,0 +1,92 @@
+@keyframes winanimation {
+    from{background-color: white;}
+    to{background-color: #5cb9f1;}
+}
+
+@keyframes loseanimation {
+    from{background-color: white;}
+    to{background-color: #f3594d;}
+}
+
+@keyframes tieanimation {
+    from{background-color: white;}
+    to{background-color: #cf8ae0;}
+}
+
+* {
+    font-family: 'Megrim', cursive;
+    background-color: #d7d4d1;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 26rem;
+    height: 26rem;
+    display: grid;
+    grid-gap: 0.3rem;
+    margin: 1rem auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    background-color: white;
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 6rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.options-wrapper {
+    max-width: 26rem;
+    height: 4rem;
+    margin: 0px auto;
+}
+
+.xo, .difficulty {
+    display: inline-block;
+    width: 49%;
+}
+
+.xo {
+    text-align: left;
+}
+
+.difficulty {
+    text-align: right;
+}
+
+.hover {
+    color: rgba(2, 2, 2, 0.5);
+}
+
+.win {
+    animation: winanimation 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.lose {
+    animation: loseanimation 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.tie {
+    animation: tieanimation 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#start {
+    display: block;
+    border: none;
+    cursor: pointer;
+    padding: 0 2rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color: #82cb7c;
+    text-align: center;
+}
+
