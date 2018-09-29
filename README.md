@@ -5,6 +5,8 @@ X/O would appear but not place the letter.  Another key feature was to find an a
 best placement of a letter making it very difficult for the user to win.
 
 ## Usage
+[Live Demo](https://jesserm.github.io/tic-tac-toe/)
+
 User can choose between the letter X and O.  Choosing a difficulty of 'Easy' will have the computer choose a random open square
 making winning much easier.  Choosing 'Hard' will have the computer choose the best spot based on making moves ahead and seeing
 the resulting outcome of making that move.
